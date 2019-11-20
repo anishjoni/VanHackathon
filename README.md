@@ -55,7 +55,7 @@
    Since, the training data had only ~400 data points while, the test data has around ~100,000 data points the predicting power of the algorithm was not too good. Hence, to counter that I used the Feature importance from the trained model which was a very good predictor in predicting if a candidate would be hired or not. 
    
    The feature importance obtained from the model:
-   ![Feature Importance](https://github.com/anishjoni/VanHackathon/raw/master/src/feature_imp.png)
+   ![Feature Importance](https://github.com/anishjoni/VanHackathon/blob/master/viz/feature_imp.png)
   
  
 4. **Pre-Process Test Data:**
@@ -68,12 +68,14 @@
    The best way to view the results is through the streamlit app that I created with the results.
    
    It allows you to select any of the available jobs in the market and shows the top 10 candidates matching the role based on the match score as you can see below:
-   ![Top 10 Candidates](https://github.com/anishjoni/VanHackathon/raw/master/src/top_10_talent.png)
+   ![Top 10 Candidates](https://github.com/anishjoni/VanHackathon/blob/master/viz/top_10_talent.png)
    
    How to run Streamlit app:
+   
    `$ pip install streamlit`
    
-   Run following from commandline/terminal with current working directory same as the file(app.py) destination directory.
+   Run following from commandline with current working directory same as file(app.py) destination directory.
+   
    `streamlit run app.py`
    
    You'll be able to see the app run in your default browser.
