@@ -71,7 +71,7 @@
    ![Top 10 Candidates](https://github.com/anishjoni/VanHackathon/raw/master/src/top_10_talent.png)
    
 6. **Area of Improvements:**
-                   - Collecting data of Candidates who were not selected for specific roles after applying for them would help make the training more accurate.
+  - Collecting data of Candidates who were not selected for specific roles after applying for them would help make the training more accurate.
 
   - Increasing the number of data points in the training dataset.
   - Creating categories/buckets for Candidate positions to reduce redundancies of position names
