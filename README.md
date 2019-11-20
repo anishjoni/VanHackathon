@@ -3,8 +3,6 @@
 
 **Business Scenario:** Finding the best candidates for a job is a really hard task and demands a lot of time from the recruiters because each candidate must be evaluated manually. VanHack has over 100,000 candidates in our platform, and it is quite impossible to assess each candidate individually. With this in mind, they are looking for a way to determine which candidates have the highest chance of getting hired. Vanhack already has its own matching algorithm that makes matching easier, but they are looking for a more accurate solution that will ultimately result in more hires. 
 
-**Problem:**
-
 **Methodology:**
 
 1. Prepare Data
@@ -72,7 +70,5 @@
    
 6. **Area of Improvements:**
   - Collecting data of Candidates who were not selected for specific roles after applying for them would help make the training more accurate.
-
-  - Increasing the number of data points in the training dataset.
   - Creating categories/buckets for Candidate positions to reduce redundancies of position names
 
