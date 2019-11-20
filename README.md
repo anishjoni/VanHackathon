@@ -1,1 +1,0 @@
-# VanHack-Hackathon
