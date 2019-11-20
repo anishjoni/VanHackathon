@@ -65,8 +65,18 @@
 5. **Results:**
    `Results.csv` contains top 10 predictions made for each job role that needs to be filled. As seen in feature importance, this prediction is made from the trained model with `position_match` being the most prominent feature in matching the candidate to the job followed by `common_skills_ratio` and `other_skills_ration`.
    
-   The best way to view the results is through the streamlit app that I created with the results that allows you to select any of the available jobs in the market and shows the top 10 candidates matching the role based on the match score as you can see below:
+   The best way to view the results is through the streamlit app that I created with the results.
+   
+   It allows you to select any of the available jobs in the market and shows the top 10 candidates matching the role based on the match score as you can see below:
    ![Top 10 Candidates](https://github.com/anishjoni/VanHackathon/raw/master/src/top_10_talent.png)
+   
+   How to run Streamlit app:
+   `$ pip install streamlit`
+   
+   Run following from commandline/terminal with current working directory same as the file(app.py) destination directory.
+   `streamlit run app.py`
+   
+   You'll be able to see the app run in your default browser.
    
 6. **Area of Improvements:**
   - Collecting data of Candidates who were not selected for specific roles after applying for them would help make the training more accurate.
