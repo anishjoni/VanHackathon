@@ -6,7 +6,7 @@ import pandas as pd
 st.title('Top 10 Candidates for job')
 
 
-df = pd.read_csv("resulteda.csv")
+df = pd.read_csv("result.csv")
 
 option = st.selectbox(
     'Which Job would you like to see the best candidates for?',
