@@ -23,8 +23,10 @@
 │    └── JobsToPredict.csv       <- Data of jobs to predict candidates for.
 │
 ├── src
-│    ├── VanHack_main.ipynb       <- Jupyter Notebook file where the entire project resides. 
-│    └── app.py                   <- Streamlit app for accessing prediction results on GUI app.
+│    ├── app.py                   <- Demo app for accessing prediction results on GUI.
+|    ├── df.csv                   <- Test dataset
+|    ├── result.csv               <- Final results dataset with best 10 talents for each job available.
+│    └── VanHack_main.ipynb       <- Jupyter Notebook file where the entire project resides. 
 
 ```
 1. **Prepare Data:**
@@ -50,13 +52,27 @@
    
 
 3. **Train ML Models:**
-
-   Tree based algorithm, Light GBM was used to train the model and find Feature Importance
-
+     Tree based algorithm, Light GBM was used to train the model and find Feature Importance. I chose LGB because it is fast, uses less   memory and is one of the best performing classification algorithms. 
+   
+   Since, the training data had only ~400 data points while, the test data has around ~100,000 data points the predicting power of the algorithm was not too good. Hence, to counter that I used the Feature importance from the trained model which was a very good predictor in predicting if a candidate would be hired or not. 
+   
+   The feature importance obtained from the model:
+   ![Feature Importance](https://github.com/anishjoni/VanHackathon/raw/master/src/feature_imp.png)
+  
+ 
 4. **Pre-Process Test Data:**
 
-   Test data id prepared by combining all available candidates with the jobs for which best candidates must be selected for. Necessary features are added to the test data
+   Test data is prepared by combining all available candidates with jobs for which best candidates must be selected for. Necessary features are added to the test data and a match score is calculated based on the weights from the model for the most important features.
 
 5. **Results:**
-
+   `Results.csv` contains top 10 predictions made for each job role that needs to be filled. As seen in feature importance, this prediction is made from the trained model with `position_match` being the most prominent feature in matching the candidate to the job followed by `common_skills_ratio` and `other_skills_ration`.
+   
+   The best way to view the results is through the streamlit app that I created with the results that allows you to select any of the available jobs in the market and shows the top 10 candidates matching the role based on the match score as you can see below:
+   ![Top 10 Candidates](https://github.com/anishjoni/VanHackathon/raw/master/src/top_10_talent.png)
+   
 6. **Area of Improvements:**
+                   - Collecting data of Candidates who were not selected for specific roles after applying for them would help make the training more accurate.
+
+  - Increasing the number of data points in the training dataset.
+  - Creating categories/buckets for Candidate positions to reduce redundancies of position names
+
