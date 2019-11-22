@@ -83,4 +83,6 @@
 6. **Area of Improvements:**
   - Collecting data of Candidates who were not selected for specific roles after applying for them would help make the training more accurate.
   - Creating categories/buckets for Candidate positions to reduce redundancies of position names
+  
+  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/www.github.com/anishjoni/VanHackathon/master)
 
